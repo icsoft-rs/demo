@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>Demo.Backend</PackageId>
+    <Authors>Milos Cvetkovic</Authors>
+    <Owners>icsoft-rs</Owners>
+    <PackageTags>demo</PackageTags>
+    <Title>Demo.Backend</Title>
+    <Description>This is demo nuget package</Description>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Version>1.0.0</Version>
+    <RepositoryUrl>https://github.com/icsoft-rs/demo.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+</Project>
