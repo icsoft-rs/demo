@@ -14,8 +14,8 @@ dotnet pack -c Release
 dotnet nuget push "bin\Release\Demo.Backend.1.0.0.nupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
 
 dotnet pack -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg --include-symbols -c release
-dotnet nuget push "bin\Release\Demo.Backend.2.0.8.nupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
-dotnet nuget push "bin\Release\Demo.Backend.2.0.8.snupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
+dotnet nuget push "bin\Release\Demo.Backend.1.0.0.nupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
+dotnet nuget push "bin\Release\Demo.Backend.1.0.0.snupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
 
 --manage cache
 dotnet nuget locals all -l
