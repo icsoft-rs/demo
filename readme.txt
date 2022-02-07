@@ -10,6 +10,9 @@ dotnet nuget remove source NexusNuGetGroup
 nuget setapikey 1ac1cff4-6d45-3917-bcea-4ab0faa9a481 -source http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
 
 --pack and push
+dotnet pack -c Release
+dotnet nuget push "bin\Release\Demo.Backend.1.0.0.nupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
+
 dotnet pack -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg --include-symbols -c release
 dotnet nuget push "bin\Release\Demo.Backend.2.0.8.nupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
 dotnet nuget push "bin\Release\Demo.Backend.2.0.8.snupkg" -s http://nexus.h14.dev22.rs/repository/nuget-hosted/index.json
